@@ -40,6 +40,18 @@ function resolveApiBaseUrl() {
   return window.location.origin;
 }
 
+function resolveAssetUrl(value) {
+  const raw = String(value || "").trim();
+  if (!raw) return "";
+  if (/^https?:\/\//i.test(raw) || raw.startsWith("data:")) {
+    return raw;
+  }
+  if (raw.startsWith("/")) {
+    return `${resolveApiBaseUrl()}${raw}`;
+  }
+  return `${resolveApiBaseUrl()}/${raw.replace(/^\/+/, "")}`;
+}
+
 function updateSelectedPreview(file) {
   if (currentPreviewUrl) {
     URL.revokeObjectURL(currentPreviewUrl);
@@ -72,7 +84,7 @@ function renderAccessoryCards(accessories) {
 
   return accessories.map((item) => `
     <article class="accessory-card">
-      <img src="${escapeHtml(item.image?.imageUrl || "")}" alt="${escapeHtml(item.label)}">
+      <img src="${escapeHtml(resolveAssetUrl(item.image?.imageUrl || ""))}" alt="${escapeHtml(item.label)}">
       <div class="accessory-card-body">
         <h3>${escapeHtml(item.label)}</h3>
         <p>Recomendado para rostro ${escapeHtml(item.shape || "")}.</p>
@@ -133,7 +145,7 @@ function renderSuccess(file, payload) {
     ? `
       <article class="photo-card">
         <p>ROSTRO DE REFERENCIA</p>
-        <img src="${escapeHtml(referenceFace.imageUrl)}" alt="${escapeHtml(referenceFace.label || "Rostro de referencia")}">
+        <img src="${escapeHtml(resolveAssetUrl(referenceFace.imageUrl))}" alt="${escapeHtml(referenceFace.label || "Rostro de referencia")}">
         <div class="result-note">${escapeHtml(referenceFace.label || "")}</div>
       </article>
     `
