@@ -1,0 +1,69 @@
+{
+  "generated_at": "2026-02-28T18:06:40.347Z",
+  "dataset_root": "backend/Extra/APP ROSTROS/APP ROSTROS",
+  "total_samples": 565,
+  "total_classes": 7,
+  "folds": 3,
+  "classes": {
+    "Corazon": {
+      "total": 4,
+      "folds": {
+        "fold_0": 2,
+        "fold_1": 1,
+        "fold_2": 1
+      }
+    },
+    "Cuadrado": {
+      "total": 118,
+      "folds": {
+        "fold_0": 40,
+        "fold_1": 39,
+        "fold_2": 39
+      }
+    },
+    "Diamante": {
+      "total": 123,
+      "folds": {
+        "fold_1": 41,
+        "fold_0": 41,
+        "fold_2": 41
+      }
+    },
+    "Ovalado": {
+      "total": 117,
+      "folds": {
+        "fold_2": 39,
+        "fold_1": 39,
+        "fold_0": 39
+      }
+    },
+    "Rectangular": {
+      "total": 107,
+      "folds": {
+        "fold_2": 35,
+        "fold_1": 36,
+        "fold_0": 36
+      }
+    },
+    "Redondo": {
+      "total": 14,
+      "folds": {
+        "fold_1": 5,
+        "fold_2": 4,
+        "fold_0": 5
+      }
+    },
+    "Triangular": {
+      "total": 82,
+      "folds": {
+        "fold_2": 27,
+        "fold_0": 28,
+        "fold_1": 27
+      }
+    }
+  },
+  "warnings": [
+    "Dataset pequeno: solo se incluyen imagenes de la carpeta ROSTROS.",
+    "Usa validacion cruzada antes de intentar entrenar un modelo definitivo."
+  ]
+}

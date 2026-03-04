@@ -1,0 +1,64 @@
+{
+  "generated_at": "2026-02-28T17:25:01.763Z",
+  "target_per_class": 60,
+  "total_current_samples": 572,
+  "total_missing_samples": 102,
+  "classes": [
+    {
+      "label": "Corazon",
+      "current_samples": 4,
+      "target_samples": 60,
+      "missing_samples": 56,
+      "priority": "high"
+    },
+    {
+      "label": "Redondo",
+      "current_samples": 14,
+      "target_samples": 60,
+      "missing_samples": 46,
+      "priority": "high"
+    },
+    {
+      "label": "Cuadrado",
+      "current_samples": 120,
+      "target_samples": 60,
+      "missing_samples": 0,
+      "priority": "low"
+    },
+    {
+      "label": "Diamante",
+      "current_samples": 123,
+      "target_samples": 60,
+      "missing_samples": 0,
+      "priority": "low"
+    },
+    {
+      "label": "Ovalado",
+      "current_samples": 120,
+      "target_samples": 60,
+      "missing_samples": 0,
+      "priority": "low"
+    },
+    {
+      "label": "Rectangular",
+      "current_samples": 108,
+      "target_samples": 60,
+      "missing_samples": 0,
+      "priority": "low"
+    },
+    {
+      "label": "Triangular",
+      "current_samples": 83,
+      "target_samples": 60,
+      "missing_samples": 0,
+      "priority": "low"
+    }
+  ],
+  "collection_rules": [
+    "Solo usar rostro frontal o casi frontal.",
+    "Evitar filtros, stickers, textos y marcos.",
+    "Evitar duplicados de la misma persona en la misma pose.",
+    "Mantener iluminacion uniforme y rostro visible completo.",
+    "Etiquetar manualmente antes de mover al dataset principal."
+  ]
+}

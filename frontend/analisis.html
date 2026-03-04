@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Analisis Facial - Belleza en Codigo</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/config.js"></script>
+  <script defer src="assets/js/runtime-config.js"></script>
+  <script defer src="assets/js/subirImagen.js"></script>
+</head>
+<body class="site-body site-body-analysis">
+  <nav class="site-nav">
+    <a class="brand" href="index.html" aria-label="Belleza en Codigo">
+      <img src="assets/images/logo.jpg" alt="Logo Belleza en Codigo" class="brand-logo">
+      <span class="brand-text">Belleza en Codigo</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Inicio</a>
+      <a class="nav-cta" href="analisis.html">Analisis facial</a>
+    </div>
+  </nav>
+
+  <main class="analysis-page">
+    <section class="analysis-shell">
+      <div class="analysis-intro">
+        <p class="eyebrow">Analisis facial</p>
+        <h1>Sube tu foto y recibe una lectura mas clara del rostro.</h1>
+        <p>
+          La API combina OpenAI con el clasificador local del proyecto para estimar tu forma de rostro,
+          elegir un rostro de referencia y sugerir accesorios del catalogo.
+        </p>
+      </div>
+
+      <form id="form-analisis" class="analysis-form">
+        <div class="analysis-upload-grid">
+          <section class="upload-panel">
+            <span class="panel-label">Paso 1</span>
+            <h2>Selecciona una imagen</h2>
+            <p>Usa una selfie frontal, con buena iluminacion y sin filtros agresivos.</p>
+            <input type="file" accept="image/jpeg,image/png,image/webp" required id="foto" hidden>
+            <label for="foto" class="button button-primary">Elegir imagen</label>
+            <p id="file-meta" class="file-meta">Aun no has seleccionado archivo.</p>
+          </section>
+
+          <section class="preview-panel" id="preview-card">
+            <span class="panel-label">Paso 2</span>
+            <div id="preview-empty" class="preview-empty">
+              La previsualizacion aparecera aqui antes de enviar la foto.
+            </div>
+            <img id="preview-img" class="preview-img" alt="Vista previa de tu foto">
+          </section>
+        </div>
+
+        <div class="analysis-actions">
+          <button type="submit" id="btn-analizar" class="button button-primary button-large">Analizar mi rostro</button>
+        </div>
+      </form>
+
+      <section id="resultado" class="result-shell" aria-live="polite"></section>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,26 @@
+﻿{
+  "name": "cosmetica-app",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node backend/index.js",
+    "dev:backend": "node backend/index.js",
+    "start": "node backend/index.js",
+    "start:backend": "node backend/index.js",
+    "serve": "node backend/index.js",
+    "dataset:build": "node backend/ml/build-face-shape-dataset.mjs",
+    "dataset:plan": "node backend/ml/plan-face-shape-expansion.mjs",
+    "dataset:validate-inbox": "node backend/ml/validate-face-shape-inbox.mjs",
+    "dataset:import-extra": "node backend/ml/import-extra-to-inbox.mjs",
+    "dataset:promote-inbox": "node backend/ml/promote-inbox-to-dataset.mjs",
+    "ml:extract-features": "powershell -ExecutionPolicy Bypass -File backend/ml/extract-face-shape-features.ps1",
+    "ml:train-baseline": "node backend/ml/train-face-shape-baseline.mjs",
+    "ml:baseline": "npm run ml:extract-features && npm run ml:train-baseline"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "multer": "^1.4.5-lts.1"
+  }
+}

@@ -1,0 +1,10 @@
+[build]
+  base = "frontend"
+  publish = "."
+  command = "node scripts/generate-runtime-config.mjs"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"

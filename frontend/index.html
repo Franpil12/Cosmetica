@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Belleza en Codigo</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="site-body">
+  <nav class="site-nav">
+    <a class="brand" href="index.html" aria-label="Belleza en Codigo">
+      <img src="assets/images/logo.jpg" alt="Logo Belleza en Codigo" class="brand-logo">
+      <span class="brand-text">Belleza en Codigo</span>
+    </a>
+    <div class="nav-links">
+      <a href="#inicio">Inicio</a>
+      <a href="#beneficios">Beneficios</a>
+      <a href="#funciona">Como funciona</a>
+      <a href="#acerca">Acerca</a>
+      <a href="#contacto">Contacto</a>
+      <a class="nav-cta" href="analisis.html">Analisis facial</a>
+    </div>
+  </nav>
+
+  <main>
+    <section id="inicio" class="hero-section">
+      <div class="hero-copy">
+        <p class="eyebrow">Asesoria estetica con IA</p>
+        <h1>Recomendaciones visuales segun la forma real de tu rostro.</h1>
+        <p class="hero-description">
+          Sube una foto frontal y recibe una lectura de rostro con referencias visuales y sugerencias
+          de accesorios pensadas para resaltar tus facciones.
+        </p>
+        <div class="hero-actions">
+          <a href="analisis.html" class="button button-primary">Probar analisis</a>
+          <a href="#funciona" class="button button-secondary">Ver proceso</a>
+        </div>
+        <ul class="hero-highlights">
+          <li>Analisis asistido por IA</li>
+          <li>Catalogo local de referencias</li>
+          <li>Experiencia optimizada para movil</li>
+        </ul>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-card hero-card-main">
+          <img src="assets/images/logo.jpg" alt="Belleza en Codigo" class="hero-image">
+          <div class="hero-card-content">
+            <p class="hero-card-label">Lectura facial</p>
+            <strong>Estilo sugerido segun tus proporciones</strong>
+          </div>
+        </div>
+        <div class="hero-card hero-card-accent">
+          <span>Rostro</span>
+          <strong>Ovalado</strong>
+          <small>Referencia de ejemplo</small>
+        </div>
+      </div>
+    </section>
+
+    <section id="beneficios" class="section-block">
+      <div class="section-heading">
+        <p class="eyebrow">Beneficios</p>
+        <h2>Una experiencia mas clara, util y facil de usar.</h2>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <span class="feature-icon">01</span>
+          <h3>Personalizacion real</h3>
+          <p>Las sugerencias no salen de una plantilla generica. Se apoyan en la lectura del rostro y en el catalogo del proyecto.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon">02</span>
+          <h3>Resultados entendibles</h3>
+          <p>La app muestra explicacion, accesorios sugeridos y senales usadas para llegar a la recomendacion final.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon">03</span>
+          <h3>Privacidad practica</h3>
+          <p>El flujo se centra en procesar la imagen para el analisis y devolver el resultado sin exponer una red social ni perfiles publicos.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon">04</span>
+          <h3>Diseno adaptable</h3>
+          <p>Todo el frontend se reorganiza correctamente en telefono, tablet y escritorio sin romper formularios ni resultados.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="funciona" class="section-block section-tinted">
+      <div class="section-heading">
+        <p class="eyebrow">Proceso</p>
+        <h2>Como funciona el analisis</h2>
+      </div>
+      <div class="steps-grid">
+        <article class="step-card">
+          <span class="step-number">1</span>
+          <h3>Sube una selfie frontal</h3>
+          <p>La mejor entrada es una foto con buena luz, rostro visible completo y fondo simple.</p>
+        </article>
+        <article class="step-card">
+          <span class="step-number">2</span>
+          <h3>La API analiza la imagen</h3>
+          <p>El backend combina la lectura de OpenAI con el clasificador local para estimar la forma del rostro.</p>
+        </article>
+        <article class="step-card">
+          <span class="step-number">3</span>
+          <h3>Recibes referencias y accesorios</h3>
+          <p>El resultado muestra rostro de referencia, foco de accesorios y recomendaciones visuales del catalogo.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="acerca" class="section-block about-layout">
+      <article class="info-panel">
+        <p class="eyebrow">Mision</p>
+        <h2>Belleza en Codigo busca convertir un analisis tecnico en una experiencia simple para cualquier persona.</h2>
+        <p>
+          El proyecto cruza vision computacional, catalogos visuales y una interfaz clara para sugerir opciones esteticas
+          que tengan contexto y no solo un resultado aislado.
+        </p>
+      </article>
+      <article class="info-panel info-panel-contrast">
+        <p class="eyebrow">Valores</p>
+        <ul class="value-list">
+          <li>Transparencia sobre como se genera cada sugerencia.</li>
+          <li>Accesibilidad visual en escritorio y movil.</li>
+          <li>Base tecnica preparada para desplegar frontend y backend por separado.</li>
+          <li>Mejora continua del catalogo y de la experiencia de usuario.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="contacto" class="section-block section-contact">
+      <div class="section-heading section-heading-left">
+        <p class="eyebrow">Contacto</p>
+        <h2>Cuentanos que quieres mejorar o integrar.</h2>
+        <p>Si vas a subir la plataforma a la nube, esta version ya queda preparada para separar frontend y backend.</p>
+      </div>
+
+      <form class="contact-form">
+        <input type="text" placeholder="Tu nombre" required>
+        <input type="email" placeholder="Tu correo" required>
+        <textarea placeholder="Tu mensaje" rows="5" required></textarea>
+        <button type="submit" class="button button-primary">Enviar mensaje</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>2026 Belleza en Codigo. Frontend y backend listos para despliegue separado.</p>
+  </footer>
+</body>
+</html>

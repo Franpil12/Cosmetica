@@ -1,0 +1,42 @@
+{
+  "generated_at": "2026-02-28T16:49:27.249Z",
+  "inbox_root": "backend/ml/inbox",
+  "classes": {
+    "Ovalado": {
+      "samples": 0,
+      "invalid_files": [],
+      "suspicious_names": []
+    },
+    "Redondo": {
+      "samples": 0,
+      "invalid_files": [],
+      "suspicious_names": []
+    },
+    "Cuadrado": {
+      "samples": 0,
+      "invalid_files": [],
+      "suspicious_names": []
+    },
+    "Rectangular": {
+      "samples": 0,
+      "invalid_files": [],
+      "suspicious_names": []
+    },
+    "Corazon": {
+      "samples": 0,
+      "invalid_files": [],
+      "suspicious_names": []
+    },
+    "Diamante": {
+      "samples": 0,
+      "invalid_files": [],
+      "suspicious_names": []
+    },
+    "Triangular": {
+      "samples": 0,
+      "invalid_files": [],
+      "suspicious_names": []
+    }
+  },
+  "warnings": []
+}

@@ -1,0 +1,157 @@
+{
+    "generated_at":  "2026-02-28T13:06:32.9559935-05:00",
+    "accessory_directories_moved":  [
+                                        {
+                                            "shape":  "alargado",
+                                            "category":  "ARETES",
+                                            "target":  "D:\\Visual\\Cosmetica\\backend\\Accessories\\APP ROSTROS\\APP ROSTROS\\alargado\\ARETES"
+                                        },
+                                        {
+                                            "shape":  "alargado",
+                                            "category":  "COLLAR",
+                                            "target":  "D:\\Visual\\Cosmetica\\backend\\Accessories\\APP ROSTROS\\APP ROSTROS\\alargado\\COLLAR"
+                                        },
+                                        {
+                                            "shape":  "alargado",
+                                            "category":  "GAFAS",
+                                            "target":  "D:\\Visual\\Cosmetica\\backend\\Accessories\\APP ROSTROS\\APP ROSTROS\\alargado\\GAFAS"
+                                        },
+                                        {
+                                            "shape":  "alargado",
+                                            "category":  "SOBRERO",
+                                            "target":  "D:\\Visual\\Cosmetica\\backend\\Accessories\\APP ROSTROS\\APP ROSTROS\\alargado\\SOBRERO"
+                                        },
+                                        {
+                                            "shape":  "corazon",
+                                            "category":  "COLLAR",
+                                            "target":  "D:\\Visual\\Cosmetica\\backend\\Accessories\\APP ROSTROS\\APP ROSTROS\\corazon\\COLLAR"
+                                        },
+                                        {
+                                            "shape":  "corazon",
+                                            "category":  "GAFAS",
+                                            "target":  "D:\\Visual\\Cosmetica\\backend\\Accessories\\APP ROSTROS\\APP ROSTROS\\corazon\\GAFAS"
+                                        },
+                                        {
+                                            "shape":  "corazon",
+                                            "category":  "SOBRERO",
+                                            "target":  "D:\\Visual\\Cosmetica\\backend\\Accessories\\APP ROSTROS\\APP ROSTROS\\corazon\\SOBRERO"
+                                        },
+                                        {
+                                            "shape":  "cuadrado",
+                                            "category":  "ARETES",
+                                            "target":  "D:\\Visual\\Cosmetica\\backend\\Accessories\\APP ROSTROS\\APP ROSTROS\\cuadrado\\ARETES"
+                                        },
+                                        {
+                                            "shape":  "cuadrado",
+                                            "category":  "BUFANDAS",
+                                            "target":  "D:\\Visual\\Cosmetica\\backend\\Accessories\\APP ROSTROS\\APP ROSTROS\\cuadrado\\BUFANDAS"
+                                        },
+                                        {
+                                            "shape":  "cuadrado",
+                                            "category":  "COLLAR",
+                                            "target":  "D:\\Visual\\Cosmetica\\backend\\Accessories\\APP ROSTROS\\APP ROSTROS\\cuadrado\\COLLAR"
+                                        },
+                                        {
+                                            "shape":  "cuadrado",
+                                            "category":  "GAFAS",
+                                            "target":  "D:\\Visual\\Cosmetica\\backend\\Accessories\\APP ROSTROS\\APP ROSTROS\\cuadrado\\GAFAS"
+                                        },
+                                        {
+                                            "shape":  "cuadrado",
+                                            "category":  "SOBRERO",
+                                            "target":  "D:\\Visual\\Cosmetica\\backend\\Accessories\\APP ROSTROS\\APP ROSTROS\\cuadrado\\SOBRERO"
+                                        },
+                                        {
+                                            "shape":  "diamante",
+                                            "category":  "ARETES",
+                                            "target":  "D:\\Visual\\Cosmetica\\backend\\Accessories\\APP ROSTROS\\APP ROSTROS\\diamante\\ARETES"
+                                        },
+                                        {
+                                            "shape":  "diamante",
+                                            "category":  "COLLAR",
+                                            "target":  "D:\\Visual\\Cosmetica\\backend\\Accessories\\APP ROSTROS\\APP ROSTROS\\diamante\\COLLAR"
+                                        },
+                                        {
+                                            "shape":  "diamante",
+                                            "category":  "GAFAS",
+                                            "target":  "D:\\Visual\\Cosmetica\\backend\\Accessories\\APP ROSTROS\\APP ROSTROS\\diamante\\GAFAS"
+                                        },
+                                        {
+                                            "shape":  "diamante",
+                                            "category":  "SOBRERO",
+                                            "target":  "D:\\Visual\\Cosmetica\\backend\\Accessories\\APP ROSTROS\\APP ROSTROS\\diamante\\SOBRERO"
+                                        },
+                                        {
+                                            "shape":  "ovalado",
+                                            "category":  "ARETES",
+                                            "target":  "D:\\Visual\\Cosmetica\\backend\\Accessories\\APP ROSTROS\\APP ROSTROS\\ovalado\\ARETES"
+                                        },
+                                        {
+                                            "shape":  "ovalado",
+                                            "category":  "COLLAR",
+                                            "target":  "D:\\Visual\\Cosmetica\\backend\\Accessories\\APP ROSTROS\\APP ROSTROS\\ovalado\\COLLAR"
+                                        },
+                                        {
+                                            "shape":  "ovalado",
+                                            "category":  "DIADEMA",
+                                            "target":  "D:\\Visual\\Cosmetica\\backend\\Accessories\\APP ROSTROS\\APP ROSTROS\\ovalado\\DIADEMA"
+                                        },
+                                        {
+                                            "shape":  "ovalado",
+                                            "category":  "GAFAS",
+                                            "target":  "D:\\Visual\\Cosmetica\\backend\\Accessories\\APP ROSTROS\\APP ROSTROS\\ovalado\\GAFAS"
+                                        },
+                                        {
+                                            "shape":  "redondo",
+                                            "category":  "COLLAR",
+                                            "target":  "D:\\Visual\\Cosmetica\\backend\\Accessories\\APP ROSTROS\\APP ROSTROS\\redondo\\COLLAR"
+                                        },
+                                        {
+                                            "shape":  "redondo",
+                                            "category":  "GAFAS",
+                                            "target":  "D:\\Visual\\Cosmetica\\backend\\Accessories\\APP ROSTROS\\APP ROSTROS\\redondo\\GAFAS"
+                                        },
+                                        {
+                                            "shape":  "redondo",
+                                            "category":  "SOBRERO",
+                                            "target":  "D:\\Visual\\Cosmetica\\backend\\Accessories\\APP ROSTROS\\APP ROSTROS\\redondo\\SOBRERO"
+                                        }
+                                    ],
+    "unreadable_images_quarantined":  [
+                                          {
+                                              "id":  "Cuadrado-Cuadrado__backend__Extra__Cuandrado__Cuandrado__Cuadrado.webp",
+                                              "source":  "backend/Extra/APP ROSTROS/APP ROSTROS/cuadrado/ROSTROS/Cuadrado__backend__Extra__Cuandrado__Cuandrado__Cuadrado.webp",
+                                              "target":  "D:\\Visual\\Cosmetica\\backend\\ml\\quarantine\\unreadable\\APP ROSTROS\\APP ROSTROS\\cuadrado\\ROSTROS\\Cuadrado__backend__Extra__Cuandrado__Cuandrado__Cuadrado.webp"
+                                          },
+                                          {
+                                              "id":  "Cuadrado-Cuadrado__Extra__Cuandrado__Cuandrado__Cuadrado.webp",
+                                              "source":  "backend/Extra/APP ROSTROS/APP ROSTROS/cuadrado/ROSTROS/Cuadrado__Extra__Cuandrado__Cuandrado__Cuadrado.webp",
+                                              "target":  "D:\\Visual\\Cosmetica\\backend\\ml\\quarantine\\unreadable\\APP ROSTROS\\APP ROSTROS\\cuadrado\\ROSTROS\\Cuadrado__Extra__Cuandrado__Cuandrado__Cuadrado.webp"
+                                          },
+                                          {
+                                              "id":  "Ovalado-Ovalado__Extra__a1__a1__ovalado__OVALADO.webp",
+                                              "source":  "backend/Extra/APP ROSTROS/APP ROSTROS/ovalado/ROSTROS/Ovalado__Extra__a1__a1__ovalado__OVALADO.webp",
+                                              "target":  "D:\\Visual\\Cosmetica\\backend\\ml\\quarantine\\unreadable\\APP ROSTROS\\APP ROSTROS\\ovalado\\ROSTROS\\Ovalado__Extra__a1__a1__ovalado__OVALADO.webp"
+                                          },
+                                          {
+                                              "id":  "Ovalado-Ovalado__Extra__Ovalado__Ovalado__Hombres__1.webp",
+                                              "source":  "backend/Extra/APP ROSTROS/APP ROSTROS/ovalado/ROSTROS/Ovalado__Extra__Ovalado__Ovalado__Hombres__1.webp",
+                                              "target":  "D:\\Visual\\Cosmetica\\backend\\ml\\quarantine\\unreadable\\APP ROSTROS\\APP ROSTROS\\ovalado\\ROSTROS\\Ovalado__Extra__Ovalado__Ovalado__Hombres__1.webp"
+                                          },
+                                          {
+                                              "id":  "Ovalado-Ovalado__Extra__Ovalado__Ovalado__Hombres__8.webp",
+                                              "source":  "backend/Extra/APP ROSTROS/APP ROSTROS/ovalado/ROSTROS/Ovalado__Extra__Ovalado__Ovalado__Hombres__8.webp",
+                                              "target":  "D:\\Visual\\Cosmetica\\backend\\ml\\quarantine\\unreadable\\APP ROSTROS\\APP ROSTROS\\ovalado\\ROSTROS\\Ovalado__Extra__Ovalado__Ovalado__Hombres__8.webp"
+                                          },
+                                          {
+                                              "id":  "Rectangular-Rectangular__Extra__a1__a1__Rectangular__Rectangular.webp",
+                                              "source":  "backend/Extra/APP ROSTROS/APP ROSTROS/alargado/ROSTROS/Rectangular__Extra__a1__a1__Rectangular__Rectangular.webp",
+                                              "target":  "D:\\Visual\\Cosmetica\\backend\\ml\\quarantine\\unreadable\\APP ROSTROS\\APP ROSTROS\\alargado\\ROSTROS\\Rectangular__Extra__a1__a1__Rectangular__Rectangular.webp"
+                                          },
+                                          {
+                                              "id":  "Triangular-Triangular__Extra__Triangulo__Triangulo__Mujeres__zT6UyHFHEQ9RcKykplWCycKBnoS.webp",
+                                              "source":  "backend/Extra/APP ROSTROS/APP ROSTROS/triangular/ROSTROS/Triangular__Extra__Triangulo__Triangulo__Mujeres__zT6UyHFHEQ9RcKykplWCycKBnoS.webp",
+                                              "target":  "D:\\Visual\\Cosmetica\\backend\\ml\\quarantine\\unreadable\\APP ROSTROS\\APP ROSTROS\\triangular\\ROSTROS\\Triangular__Extra__Triangulo__Triangulo__Mujeres__zT6UyHFHEQ9RcKykplWCycKBnoS.webp"
+                                          }
+                                      ]
+}

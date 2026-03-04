@@ -1,0 +1,143 @@
+{
+  "generated_at": "2026-02-28T18:08:04.823Z",
+  "baseline": "weighted-knn-centered-crop-grayscale-32x32",
+  "image_size": 32,
+  "feature_length": 1088,
+  "skipped_during_feature_extraction": 0,
+  "k_neighbors": 5,
+  "evaluation": {
+    "labels": [
+      "Corazon",
+      "Cuadrado",
+      "Diamante",
+      "Ovalado",
+      "Rectangular",
+      "Redondo",
+      "Triangular"
+    ],
+    "folds": [
+      {
+        "fold": 0,
+        "train_samples": 374,
+        "validation_samples": 191,
+        "accuracy": 0.2931937172774869
+      },
+      {
+        "fold": 1,
+        "train_samples": 377,
+        "validation_samples": 188,
+        "accuracy": 0.2925531914893617
+      },
+      {
+        "fold": 2,
+        "train_samples": 379,
+        "validation_samples": 186,
+        "accuracy": 0.3279569892473118
+      }
+    ],
+    "overall_accuracy": 0.30442477876106194,
+    "total_samples": 565,
+    "confusion_matrix": {
+      "Corazon": {
+        "Corazon": 0,
+        "Cuadrado": 1,
+        "Diamante": 0,
+        "Ovalado": 1,
+        "Rectangular": 0,
+        "Redondo": 2,
+        "Triangular": 0
+      },
+      "Cuadrado": {
+        "Corazon": 0,
+        "Cuadrado": 40,
+        "Diamante": 18,
+        "Ovalado": 19,
+        "Rectangular": 24,
+        "Redondo": 4,
+        "Triangular": 13
+      },
+      "Diamante": {
+        "Corazon": 1,
+        "Cuadrado": 20,
+        "Diamante": 45,
+        "Ovalado": 15,
+        "Rectangular": 30,
+        "Redondo": 0,
+        "Triangular": 12
+      },
+      "Ovalado": {
+        "Corazon": 1,
+        "Cuadrado": 33,
+        "Diamante": 23,
+        "Ovalado": 21,
+        "Rectangular": 23,
+        "Redondo": 3,
+        "Triangular": 13
+      },
+      "Rectangular": {
+        "Corazon": 1,
+        "Cuadrado": 9,
+        "Diamante": 14,
+        "Ovalado": 16,
+        "Rectangular": 52,
+        "Redondo": 0,
+        "Triangular": 15
+      },
+      "Redondo": {
+        "Corazon": 0,
+        "Cuadrado": 6,
+        "Diamante": 1,
+        "Ovalado": 4,
+        "Rectangular": 0,
+        "Redondo": 3,
+        "Triangular": 0
+      },
+      "Triangular": {
+        "Corazon": 1,
+        "Cuadrado": 18,
+        "Diamante": 12,
+        "Ovalado": 7,
+        "Rectangular": 32,
+        "Redondo": 1,
+        "Triangular": 11
+      }
+    },
+    "per_class": [
+      {
+        "label": "Corazon",
+        "samples": 4,
+        "accuracy": 0
+      },
+      {
+        "label": "Cuadrado",
+        "samples": 118,
+        "accuracy": 0.3389830508474576
+      },
+      {
+        "label": "Diamante",
+        "samples": 123,
+        "accuracy": 0.36585365853658536
+      },
+      {
+        "label": "Ovalado",
+        "samples": 117,
+        "accuracy": 0.1794871794871795
+      },
+      {
+        "label": "Rectangular",
+        "samples": 107,
+        "accuracy": 0.48598130841121495
+      },
+      {
+        "label": "Redondo",
+        "samples": 14,
+        "accuracy": 0.21428571428571427
+      },
+      {
+        "label": "Triangular",
+        "samples": 82,
+        "accuracy": 0.13414634146341464
+      }
+    ]
+  }
+}
