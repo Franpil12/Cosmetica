@@ -241,7 +241,10 @@ router.post("/analyze", upload.single("photo"), async (req, res) => {
       return res.status(400).json({ error: "Unsupported file type. Use JPG, PNG or WEBP." });
     }
 
-    const localPrediction = await predictLocalFaceShapeFromBuffer(req.file.buffer, req.file.mimetype).catch(() => null);
+    const localPrediction = await predictLocalFaceShapeFromBuffer(req.file.buffer, req.file.mimetype).catch((error) => {
+      console.error("Local model failed:", error);
+      return null;
+    });
     const openaiKey = process.env.OPENAI_API_KEY;
 
     if (!openaiKey) {
