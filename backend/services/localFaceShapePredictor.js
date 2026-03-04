@@ -1,16 +1,15 @@
 import fs from "fs";
 import os from "os";
 import path from "path";
-import { spawn } from "child_process";
 import { fileURLToPath } from "url";
+import sharp from "sharp";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const MODEL_PATH = path.resolve(__dirname, "..", "ml", "face-shape-baseline-model.json");
-const FEATURE_SCRIPT_PATH = path.resolve(__dirname, "..", "ml", "extract-single-face-shape-feature.ps1");
-const POWERSHELL_PATH = process.env.POWERSHELL_PATH || "powershell";
 const TEMP_DIR = path.join(os.tmpdir(), "cosmetica-face-shape");
+const IMAGE_SIZE = 32;
 
 const model = fs.existsSync(MODEL_PATH)
   ? JSON.parse(fs.readFileSync(MODEL_PATH, "utf8"))
@@ -48,54 +47,49 @@ function buildConfidence(best, runnerUp) {
   return Math.max(0, Math.min(0.99, Number(normalizedMargin.toFixed(4))));
 }
 
-function extractFeatureVector(tempImagePath) {
-  return new Promise((resolve, reject) => {
-    const child = spawn(
-      POWERSHELL_PATH,
-      [
-        "-ExecutionPolicy",
-        "Bypass",
-        "-File",
-        FEATURE_SCRIPT_PATH,
-        "-InputPath",
-        tempImagePath,
-      ],
-      { windowsHide: true },
-    );
+async function extractFeatureVector(tempImagePath) {
+  const { data } = await sharp(tempImagePath)
+    .resize(IMAGE_SIZE, IMAGE_SIZE, {
+      fit: "cover",
+      position: "centre",
+    })
+    .removeAlpha()
+    .raw()
+    .toBuffer({ resolveWithObject: true });
 
-    let stdout = "";
-    let stderr = "";
+  const grayscale = [];
+  const rowMeans = new Array(IMAGE_SIZE).fill(0);
+  const columnMeans = new Array(IMAGE_SIZE).fill(0);
 
-    child.stdout.on("data", (chunk) => {
-      stdout += chunk.toString();
-    });
+  for (let y = 0; y < IMAGE_SIZE; y += 1) {
+    for (let x = 0; x < IMAGE_SIZE; x += 1) {
+      const pixelIndex = (y * IMAGE_SIZE + x) * 3;
+      const red = data[pixelIndex];
+      const green = data[pixelIndex + 1];
+      const blue = data[pixelIndex + 2];
+      const gray = ((red * 0.299) + (green * 0.587) + (blue * 0.114)) / 255;
+      const rounded = Number(gray.toFixed(6));
 
-    child.stderr.on("data", (chunk) => {
-      stderr += chunk.toString();
-    });
+      grayscale.push(rounded);
+      rowMeans[y] += gray;
+      columnMeans[x] += gray;
+    }
+  }
 
-    child.on("error", (error) => {
-      reject(error);
-    });
+  for (let index = 0; index < IMAGE_SIZE; index += 1) {
+    rowMeans[index] = Number((rowMeans[index] / IMAGE_SIZE).toFixed(6));
+    columnMeans[index] = Number((columnMeans[index] / IMAGE_SIZE).toFixed(6));
+  }
 
-    child.on("close", (code) => {
-      if (code !== 0) {
-        reject(new Error(stderr.trim() || `Feature extraction exited with code ${code}`));
-        return;
-      }
+  const features = [...grayscale, ...rowMeans, ...columnMeans];
+  const mean = features.reduce((sum, value) => sum + value, 0) / features.length;
+  const variance = features.reduce((sum, value) => {
+    const delta = value - mean;
+    return sum + (delta * delta);
+  }, 0) / features.length;
+  const stdDev = Math.sqrt(variance) || 1;
 
-      try {
-        const parsed = JSON.parse(stdout.trim());
-        if (!Array.isArray(parsed?.vector)) {
-          reject(new Error("Feature extraction returned an invalid payload."));
-          return;
-        }
-        resolve(parsed.vector.map((value) => Number(value)));
-      } catch (error) {
-        reject(error);
-      }
-    });
-  });
+  return features.map((value) => Number((((value - mean) / stdDev)).toFixed(6)));
 }
 
 export async function predictLocalFaceShapeFromBuffer(buffer, mimeType = "image/jpeg") {
