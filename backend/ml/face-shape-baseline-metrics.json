@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-02-28T18:08:04.823Z",
-  "baseline": "weighted-knn-centered-crop-grayscale-32x32",
+  "generated_at": "2026-03-04T13:06:21.685Z",
+  "baseline": "sharp-centered-crop-grayscale-32x32",
   "image_size": 32,
   "feature_length": 1088,
   "skipped_during_feature_extraction": 0,
@@ -20,22 +20,22 @@
         "fold": 0,
         "train_samples": 374,
         "validation_samples": 191,
-        "accuracy": 0.2931937172774869
+        "accuracy": 0.32460732984293195
       },
       {
         "fold": 1,
         "train_samples": 377,
         "validation_samples": 188,
-        "accuracy": 0.2925531914893617
+        "accuracy": 0.2978723404255319
       },
       {
         "fold": 2,
         "train_samples": 379,
         "validation_samples": 186,
-        "accuracy": 0.3279569892473118
+        "accuracy": 0.3225806451612903
       }
     ],
-    "overall_accuracy": 0.30442477876106194,
+    "overall_accuracy": 0.31504424778761064,
     "total_samples": 565,
     "confusion_matrix": {
       "Corazon": {
@@ -43,63 +43,63 @@
         "Cuadrado": 1,
         "Diamante": 0,
         "Ovalado": 1,
-        "Rectangular": 0,
-        "Redondo": 2,
+        "Rectangular": 2,
+        "Redondo": 0,
         "Triangular": 0
       },
       "Cuadrado": {
-        "Corazon": 0,
-        "Cuadrado": 40,
-        "Diamante": 18,
-        "Ovalado": 19,
-        "Rectangular": 24,
+        "Corazon": 1,
+        "Cuadrado": 41,
+        "Diamante": 15,
+        "Ovalado": 21,
+        "Rectangular": 21,
         "Redondo": 4,
-        "Triangular": 13
+        "Triangular": 15
       },
       "Diamante": {
-        "Corazon": 1,
-        "Cuadrado": 20,
-        "Diamante": 45,
-        "Ovalado": 15,
-        "Rectangular": 30,
+        "Corazon": 0,
+        "Cuadrado": 19,
+        "Diamante": 41,
+        "Ovalado": 17,
+        "Rectangular": 35,
         "Redondo": 0,
-        "Triangular": 12
+        "Triangular": 11
       },
       "Ovalado": {
-        "Corazon": 1,
-        "Cuadrado": 33,
-        "Diamante": 23,
-        "Ovalado": 21,
+        "Corazon": 0,
+        "Cuadrado": 29,
+        "Diamante": 22,
+        "Ovalado": 27,
         "Rectangular": 23,
         "Redondo": 3,
         "Triangular": 13
       },
       "Rectangular": {
         "Corazon": 1,
-        "Cuadrado": 9,
-        "Diamante": 14,
-        "Ovalado": 16,
-        "Rectangular": 52,
-        "Redondo": 0,
-        "Triangular": 15
+        "Cuadrado": 5,
+        "Diamante": 19,
+        "Ovalado": 13,
+        "Rectangular": 50,
+        "Redondo": 2,
+        "Triangular": 17
       },
       "Redondo": {
         "Corazon": 0,
         "Cuadrado": 6,
         "Diamante": 1,
-        "Ovalado": 4,
+        "Ovalado": 3,
         "Rectangular": 0,
-        "Redondo": 3,
+        "Redondo": 4,
         "Triangular": 0
       },
       "Triangular": {
         "Corazon": 1,
         "Cuadrado": 18,
         "Diamante": 12,
-        "Ovalado": 7,
-        "Rectangular": 32,
-        "Redondo": 1,
-        "Triangular": 11
+        "Ovalado": 6,
+        "Rectangular": 30,
+        "Redondo": 0,
+        "Triangular": 15
       }
     },
     "per_class": [
@@ -111,32 +111,32 @@
       {
         "label": "Cuadrado",
         "samples": 118,
-        "accuracy": 0.3389830508474576
+        "accuracy": 0.3474576271186441
       },
       {
         "label": "Diamante",
         "samples": 123,
-        "accuracy": 0.36585365853658536
+        "accuracy": 0.3333333333333333
       },
       {
         "label": "Ovalado",
         "samples": 117,
-        "accuracy": 0.1794871794871795
+        "accuracy": 0.23076923076923078
       },
       {
         "label": "Rectangular",
         "samples": 107,
-        "accuracy": 0.48598130841121495
+        "accuracy": 0.4672897196261682
       },
       {
         "label": "Redondo",
         "samples": 14,
-        "accuracy": 0.21428571428571427
+        "accuracy": 0.2857142857142857
       },
       {
         "label": "Triangular",
         "samples": 82,
-        "accuracy": 0.13414634146341464
+        "accuracy": 0.18292682926829268
       }
     ]
   }

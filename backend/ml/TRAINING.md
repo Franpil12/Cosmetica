@@ -21,7 +21,7 @@ Con este volumen no conviene entrenar todavia un modelo final sin revisar calida
 - `node backend/ml/plan-face-shape-expansion.mjs`
 - `node backend/ml/validate-face-shape-inbox.mjs`
 - `node backend/ml/import-extra-to-inbox.mjs`
-- `powershell -ExecutionPolicy Bypass -File backend/ml/extract-face-shape-features.ps1`
+- `node backend/ml/extract-face-shape-features.mjs`
 - `node backend/ml/train-face-shape-baseline.mjs`
 
 Genera:
@@ -44,6 +44,10 @@ Ya existe un primer pipeline local sin dependencias externas:
 3. `npm run ml:train-baseline`
 
 El baseline usa imagenes redimensionadas a `32x32` en escala de grises y un clasificador por centroides con validacion cruzada segun los folds del dataset.
+
+## Nota de compatibilidad
+
+El extractor actual de features usa `sharp` en Node para que el entrenamiento y la inferencia local compartan el mismo pipeline tanto en Windows como en Railway/Linux.
 
 ## Curacion
 

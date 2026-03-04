@@ -32,6 +32,13 @@ function formatConfidence(value) {
   return `${(value * 100).toFixed(1)}%`;
 }
 
+function getConfidenceBand(value) {
+  if (!Number.isFinite(value)) return "N/D";
+  if (value >= 0.2) return "Alta";
+  if (value >= 0.08) return "Media";
+  return "Baja";
+}
+
 function resolveApiBaseUrl() {
   const configured = String(window.APP_CONFIG?.API_BASE_URL || "").trim();
   if (configured) {
@@ -197,7 +204,7 @@ function renderSuccess(file, payload) {
         <summary>Mostrar mas informacion</summary>
         <div class="signal-grid">
           ${renderSignalCard("OPENAI", signals.openai?.face_shape, "Lectura visual y razonamiento del rostro.")}
-          ${renderSignalCard("MODELO LOCAL", localSignal?.face_shape, `Baseline: ${escapeHtml(localSignal?.baseline || "N/D")} | confianza ${escapeHtml(formatConfidence(localSignal?.confidence))}`)}
+          ${renderSignalCard("MODELO LOCAL", localSignal?.face_shape, `Baseline: ${escapeHtml(localSignal?.baseline || "N/D")} | confianza ${escapeHtml(getConfidenceBand(localSignal?.confidence))}${Number.isFinite(localSignal?.confidence) ? ` (${escapeHtml(formatConfidence(localSignal.confidence))})` : ""}`)}
           ${renderSignalCard("DECISION FINAL", finalSignal.face_shape, `Estrategia: ${escapeHtml(normalizeLabel(finalSignal.strategy || analysis.prediction_strategy || "N/D"))}`)}
         </div>
         <div class="result-note">

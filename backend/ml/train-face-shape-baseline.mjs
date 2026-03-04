@@ -142,7 +142,7 @@ if (!samples.length) {
 
 const metrics = {
   generated_at: new Date().toISOString(),
-  baseline: "weighted-knn-centered-crop-grayscale-32x32",
+  baseline: featurePayload.extractor || "weighted-knn-centered-crop-grayscale-32x32",
   image_size: featurePayload.image_size,
   feature_length: featurePayload.feature_length,
   skipped_during_feature_extraction: featurePayload.skipped?.length || 0,

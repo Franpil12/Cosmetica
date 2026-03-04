@@ -14,13 +14,14 @@
     "dataset:validate-inbox": "node backend/ml/validate-face-shape-inbox.mjs",
     "dataset:import-extra": "node backend/ml/import-extra-to-inbox.mjs",
     "dataset:promote-inbox": "node backend/ml/promote-inbox-to-dataset.mjs",
-    "ml:extract-features": "powershell -ExecutionPolicy Bypass -File backend/ml/extract-face-shape-features.ps1",
+    "ml:extract-features": "node backend/ml/extract-face-shape-features.mjs",
     "ml:train-baseline": "node backend/ml/train-face-shape-baseline.mjs",
     "ml:baseline": "npm run ml:extract-features && npm run ml:train-baseline"
   },
   "dependencies": {
     "dotenv": "^16.4.5",
     "express": "^4.21.2",
-    "multer": "^1.4.5-lts.1"
+    "multer": "^1.4.5-lts.1",
+    "sharp": "^0.33.5"
   }
 }
